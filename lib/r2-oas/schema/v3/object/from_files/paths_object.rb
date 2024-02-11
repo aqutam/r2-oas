@@ -15,13 +15,13 @@ module R2OAS
 
           def to_doc
             create_doc
-            @doc || {}
+            @doc
           end
 
           private
 
           def create_doc
-            @doc&.each do |path, doc_when_path|
+            @doc.each do |path, doc_when_path|
               ref = { path: path }
               @doc[path] = PathItemObject.new(doc_when_path, ref, opts).to_doc
             end

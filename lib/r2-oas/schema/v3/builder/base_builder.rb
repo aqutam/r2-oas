@@ -46,6 +46,7 @@ module R2OAS
         end
 
         def schema_files_paths
+          puts 'aaa', @glob_schema_paths
           Dir.glob(@glob_schema_paths)
         end
 
