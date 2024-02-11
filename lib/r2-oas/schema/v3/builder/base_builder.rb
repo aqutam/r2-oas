@@ -39,7 +39,6 @@ module R2OAS
 
         def create_glob_schema_paths
           exclude_paths_regexp_paths               = ["#{schema_save_dir_path}/**.yml"]
-          puts "exclude_paths_regexp_paths: #{exclude_paths_regexp_paths}"
           components_security_schemes_regexp_paths = ["#{schema_save_dir_path}/components/securitySchemes/**/**.yml"]
 
           # components/securitySchemes is not referenced in $ ref.
