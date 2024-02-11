@@ -15,7 +15,7 @@ module R2OAS
 
           def to_doc
             create_doc
-            @doc
+            @doc || {}
           end
 
           private
